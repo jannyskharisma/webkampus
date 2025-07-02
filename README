@@ -1,5 +1,6 @@
 / (root)
 |-- index.php               <- Halaman depan
+|-- style.css               <- style
 |-- login.php               <- Login admin
 |-- koneksi.php             <- Koneksi ke database
 |-- /admin/                 <- Folder admin (CRUD)

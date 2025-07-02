@@ -6,16 +6,10 @@
   <title>Portal Kampus Digital</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <style>
-    .menu-item { position: relative; }
-    .menu-item::after {
-      content: ''; position: absolute; width: 0; height: 2px; background: orange; bottom: -2px; left: 0;
-      transition: width 0.3s;
-    }
-    .menu-item:hover::after { width: 100%; }
-    .card-hover { transition: .3s; }
-    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,.1); }
-  </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
@@ -46,24 +40,26 @@
   </div>
 </nav>
 
-<!-- Hero Carousel -->
-<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Slide 1">
-      <div class="carousel-caption">
-        <h5>Selamat Datang di Kampus Digital</h5>
-        <p>Sumber informasi terpercaya civitas akademika.</p>
-      </div>
+<!-- Hero Section -->
+<section class="hero-gradient text-white py-20">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di Portal Darul Ulum</h1>
+            <p class="text-xl mb-8">Sumber informasi terpercaya untuk seluruh civitas akademika Universitas Teknologi Digital.</p>
+            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition">
+                    <i class="fas fa-graduation-cap mr-2"></i>Info Akademik
+                </button>
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg font-semibold transition">
+                    <i class="fas fa-calendar-alt mr-2"></i>Kalender Akademik
+                </button>
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <img src="https://via.placeholder.com/500x350" alt="Ilustrasi Kampus" class="rounded-lg shadow-xl animate-float">
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://via.placeholder.com/1200x400/007bff/fff" class="d-block w-100" alt="Slide 2">
-      <div class="carousel-caption">
-        <h5>Info Akademik Terbaru</h5>
-      </div>
-    </div>
-  </div>
-</div>
+</section>
 
 <!-- Kartu Berita (dinamis dari database) -->
 <div class="container my-5">
