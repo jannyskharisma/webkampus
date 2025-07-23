@@ -56,7 +56,29 @@
             </div>
         </div>
         <div class="md:w-1/2 flex justify-center">
-            <img src="https://via.placeholder.com/500x350" alt="Ilustrasi Kampus" class="rounded-lg shadow-xl animate-float">
+            <!-- Carousel Ilustrasi Kampus -->
+            <div id="kampusCarousel" class="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="3000" style="max-width:500px;">
+              <div class="carousel-inner rounded-lg shadow-xl">
+                <div class="carousel-item active">
+                  <img src="admin/img/kampus1.jpg" class="d-block w-100" alt="Kampus 1" style="height:350px; object-fit:cover;">
+                </div>
+                <div class="carousel-item">
+                  <img src="admin/img/kampus2.jpg" class="d-block w-100" alt="Kampus 2" style="height:350px; object-fit:cover;">
+                </div>
+                <div class="carousel-item">
+                  <img src="admin/img/kampus3.jpg" class="d-block w-100" alt="Kampus 3" style="height:350px; object-fit:cover;">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#kampusCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#kampusCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- End Carousel -->
         </div>
     </div>
 </section>
